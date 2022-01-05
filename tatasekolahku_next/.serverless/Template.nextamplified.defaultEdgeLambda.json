@@ -1,0 +1,17 @@
+{
+  "name": "lr99f6q-k1aan2n",
+  "hash": "k7OcwfSlrgUFWN3liBF/xrPU2Mxx4vB6ZadUwr4BCTU=",
+  "description": "Default Lambda@Edge for Next CloudFront distribution",
+  "memory": 512,
+  "timeout": 10,
+  "code": "/Users/uzaisindiko/Documents/side/tatasekolahku/tatasekolahku_next/.serverless_nextjs/default-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs14.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::415293865485:role/lr99f6q-bmmenzn"
+  },
+  "arn": "arn:aws:lambda:us-east-1:415293865485:function:lr99f6q-k1aan2n",
+  "region": "us-east-1"
+}

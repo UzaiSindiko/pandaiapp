@@ -1,0 +1,35 @@
+service: pandaiapp
+useDotenv: true
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: prod
+  region: ap-southeast-1
+
+  environment:
+    PORT: ${env:PORT}
+    JWT_SECRET: ${env:JWT_SECRET}
+    QR_SECRET: ${env:QR_SECRET}
+    URI: ${env:URI}
+
+functions:
+  app:
+    handler: app/app.handler
+    events:
+      - http:
+          path: /
+          method: ANY
+          cors: true
+      - http:
+          path: /{proxy+}
+          method: ANY
+          cors: true
+plugins:
+  - serverless-domain-manager
+
+custom:
+  customDomain:
+    domainName: pandaiapi.uzaisindiko.com
+    basePath: ""
+    stage: ${self:provider.stage}
+    createRoute53Record: true

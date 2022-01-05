@@ -1,0 +1,17 @@
+{
+  "name": "lr99f6q-rdryrus",
+  "hash": "SJkt0ETdd532SmNfTxbzIJyICO2Sdvc7QSaDWg3X6s0=",
+  "description": "API Lambda@Edge for Next CloudFront distribution",
+  "memory": 512,
+  "timeout": 10,
+  "code": "/Users/uzaisindiko/Documents/side/tatasekolahku/tatasekolahku_next/.serverless_nextjs/api-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs14.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::415293865485:role/lr99f6q-b3ay1e"
+  },
+  "arn": "arn:aws:lambda:us-east-1:415293865485:function:lr99f6q-rdryrus",
+  "region": "us-east-1"
+}
